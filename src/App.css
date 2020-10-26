@@ -1,9 +1,10 @@
 .App {
   text-align: center;
+  color: white;
 }
 
 .header {
-  background-color: rgb(40, 51, 113);
+  background-color: #202020bd;
   width: 80%;
   margin: 70px auto 20px;
   display: flex;
@@ -11,20 +12,28 @@
   justify-content: space-between;
 }
 
-.header h1 {
-  padding: 0 30px;
-  font-weight: 400;
-  color: white;
+.info {
+  padding: 10px 30px;
+  text-align: left;
+}
+
+.name {
+  font-size: 32px;
+}
+
+.description {
+  font-weight: 200;
 }
 
 .links {
   padding: 10px 20px;
   display: flex;
+  align-self: center;
   font-size: large;
 }
 
 a {
-  padding: 10px 5px;
+  padding: 5px;
   text-decoration: none;
   color: white;
 }
@@ -33,5 +42,5 @@ a {
   width: 80%;
   margin: 20px auto 70px;
   height: 480px;
-  background-color: rgb(40, 51, 113);
+  background-color: #202020bd;
 }

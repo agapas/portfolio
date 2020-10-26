@@ -5,7 +5,10 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <h1>Agnieszka Pas</h1>
+        <div className="info">
+          <div className="name">Agnieszka Pas</div>
+          <div className="description">FRONT-END SOFTWARE ENGINEER</div>
+        </div>
         <div className="links">
           <a href="mailto:agnieszka_pas@yahoo.ie">
             <i className="fa fa-fw fa-envelope fa-lg" />
