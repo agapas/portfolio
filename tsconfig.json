@@ -4,6 +4,10 @@
     "lib": [
       "dom",
       "dom.iterable",
+      "es5",
+      "ScriptHost",
+      "es2015.promise",
+      "es2015.collection",
       "esnext"
     ],
     "allowJs": true,
@@ -18,9 +22,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "pretty": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src", "specs"],
+  "exclude": ["node_modules", "build"]
 }

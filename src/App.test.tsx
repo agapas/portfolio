@@ -1,9 +1,9 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders h1 element', () => {
+test("renders element with name", () => {
   render(<App />);
-  const h1Element = screen.getByText(/agnieszka pas/i);
-  expect(h1Element).toBeInTheDocument();
+  const element = screen.getByText(/agnieszka pas/i);
+  expect(element).toBeInTheDocument();
 });

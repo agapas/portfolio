@@ -1,7 +1,7 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-function App() {
+const App: React.FC<unknown> = () => {
   return (
     <div className="App">
       <header className="header">
@@ -32,6 +32,6 @@ function App() {
       <div className="content">some content</div>
     </div>
   );
-}
+};
 
 export default App;
