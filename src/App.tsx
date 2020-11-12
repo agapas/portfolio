@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import jsonData from "resources/data.json";
 import { Header } from "components/header";
 import "./App.css";
+import { CardList } from "components/CardList";
 
 interface ContactInfo {
   [linkName: string]: string;
@@ -18,7 +19,7 @@ interface Tag {
   url: string;
 }
 
-interface Project {
+export interface Project {
   name: string;
   tags: Tag[];
   description: string;
@@ -49,15 +50,15 @@ class App extends Component<{}, StateType> {
   };
 
   componentDidMount() {
-    this.setState({ data: { ...jsonData } }, () => console.log(this.state));
+    this.setState({ data: { ...jsonData } });
   }
 
   render() {
-    const { details } = this.state.data;
+    const { details, projects } = this.state.data;
     return (
       <div className="App">
         <Header {...details} />
-        <div className="content">some content</div>
+        <CardList projects={projects} />
       </div>
     );
   }

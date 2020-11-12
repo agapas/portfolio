@@ -6,7 +6,11 @@ interface PropTypes {
   target?: string;
 }
 
-export const Link = ({ icon, href, target }: PropTypes) => (
+export const Link: React.FC<PropTypes> = ({
+  icon,
+  href,
+  target,
+}: PropTypes) => (
   <a
     href={href}
     target={target}
