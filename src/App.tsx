@@ -1,31 +1,59 @@
-import React from "react";
-import { Info } from "components/header/Info";
-import { Links } from "components/header/Links";
+import React, { Component } from "react";
+import jsonData from "resources/data.json";
+import { Header } from "components/header";
 import "./App.css";
 
-// TODO:
-// move data to resorces and change App into class component with fetching data
-const data = {
-  name: "Agnieszka Pas",
-  occupation: "Front-End Software Engineer",
-  "contact-info": {
-    email: "agnieszka_pas@yahoo.ie",
-    github: "https://github.com/agapas",
-    linkedin: "https://www.linkedin.com/in/agnieszka-pas-26131b101/",
-  },
-  projects: {},
-};
+interface ContactInfo {
+  [linkName: string]: string;
+}
 
-const App: React.FC<{}> = () => {
-  return (
-    <div className="App">
-      <header className="header">
-        <Info name="Agnieszka Pas" occupation="Front-End Software Engineer" />
-        <Links />
-      </header>
-      <div className="content">some content</div>
-    </div>
-  );
-};
+export interface Details {
+  name: string;
+  occupation: string;
+  contactInfo: ContactInfo;
+}
+
+interface Project {
+  name: string;
+  description: string;
+  url: string;
+}
+
+interface Data {
+  details: Details;
+  projects: Project[];
+}
+
+interface StateType {
+  data: Data;
+}
+
+class App extends Component<{}, StateType> {
+  displayName = "App";
+  state = {
+    data: {
+      details: {
+        name: "",
+        occupation: "",
+        contactInfo: {},
+      },
+      projects: [],
+    },
+  };
+
+  componentDidMount() {
+    this.setState({ data: { ...jsonData } }, () => console.log(this.state));
+  }
+
+  render() {
+    const { details } = this.state.data;
+    return (
+      <div className="App">
+        <Header {...details} />
+        <div className="content">some content</div>
+      </div>
+    );
+  }
+}
 
 export default App;

@@ -1,0 +1,18 @@
+{
+  "details": {
+    "name": "Agnieszka Pas",
+    "occupation": "Front-End Software Engineer",
+    "contactInfo": {
+      "email": "agnieszka_pas@yahoo.ie",
+      "github": "https://github.com/agapas",
+      "linkedin": "https://www.linkedin.com/in/agnieszka-pas-26131b101/"
+    }
+  },
+  "projects": [
+    {
+      "name": "Project 1",
+      "description": "Some description",
+      "url": "url/to/project"
+    }
+  ]
+}
