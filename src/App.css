@@ -13,15 +13,16 @@ header {
 }
 
 .info {
-  padding: 10px 30px;
+  padding: 15px 30px 20px;
   text-align: left;
 }
 
 .name {
   font-size: 32px;
+  font-weight: 200;
 }
 
-.description {
+.occupation {
   font-weight: 200;
 }
 

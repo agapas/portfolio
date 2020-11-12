@@ -13,10 +13,17 @@ export interface Details {
   contactInfo: ContactInfo;
 }
 
+interface Tag {
+  name: string;
+  url: string;
+}
+
 interface Project {
   name: string;
+  tags: Tag[];
   description: string;
   url: string;
+  demo?: string;
 }
 
 interface Data {

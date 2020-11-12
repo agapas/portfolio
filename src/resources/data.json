@@ -10,9 +10,76 @@
   },
   "projects": [
     {
-      "name": "Project 1",
-      "description": "Some description",
-      "url": "url/to/project"
+      "name": "React Currency Converter",
+      "description": "A single page application written with React, in functional programming like approach, which uses the exchanged rates API.",
+      "url": "https://github.com/agapas/react-currency-converter",
+      "demo": "http://agapas.github.io/react-currency-converter",
+      "tags": [
+        { "name": "React", "url": "https://reactjs.org" },
+        { "name": "JavaScript", "url": "https://www.javascript.com" },
+        {
+          "name": "Functional Programming",
+          "url": "https://en.wikipedia.org/wiki/Functional_programming"
+        },
+        { "name": "Enzyme", "url": "https://airbnb.io/enzyme" },
+        { "name": "Jest", "url": "https://jestjs.io" }
+      ]
+    },
+    {
+      "name": "Personal Portfolio",
+      "description": "This website project. A single page responsive website written with React and TypeScript.",
+      "url": "https://github.com/agapas/portfolio",
+      "demo": "http://agapas.github.io/portfolio",
+      "tags": [
+        { "name": "React", "url": "https://reactjs.org" },
+        { "name": "TypeScript", "url": "https://www.typescriptlang.org" },
+        { "name": "JavaScript", "url": "https://www.javascript.com" },
+        {
+          "name": "Functional Programming",
+          "url": "https://en.wikipedia.org/wiki/Functional_programming"
+        },
+        { "name": "Jest", "url": "https://jestjs.io" }
+      ]
+    },
+    {
+      "name": "Good Morning Translator",
+      "description": "jQuery Mobile application which translates phrase: 'Good Morning' into 26 languages. It was made as a school project.",
+      "url": "https://github.com/agapas/good-morning-translator",
+      "demo": "https://agapas.github.io/good-morning-translator",
+      "tags": [
+        { "name": "JQuery", "url": "https://jquery.com" },
+        { "name": "HTML", "url": "https://en.wikipedia.org/wiki/HTML" },
+        {
+          "name": "CSS",
+          "url": "https://en.wikipedia.org/wiki/Cascading_Style_Sheets"
+        }
+      ]
+    },
+    {
+      "name": "Login and Register System",
+      "description": "Login and Register System, written in OOP PHP and MySQLi. It was made as a school project.",
+      "url": "https://github.com/agapas/login-register-system",
+      "tags": [
+        {
+          "name": "OOP",
+          "url": "https://en.wikipedia.org/wiki/Object-oriented_programming"
+        },
+        { "name": "PHP", "url": "https://www.php.net" },
+        { "name": "MySQLi", "url": "https://en.wikipedia.org/wiki/MySQLi" }
+      ]
+    },
+    {
+      "name": "Mini Dice Game",
+      "description": "A simple dice game written in OOP PHP and MySQLi. It was made as a school project.",
+      "url": "https://github.com/agapas/mini-dice-game",
+      "tags": [
+        {
+          "name": "OOP",
+          "url": "https://en.wikipedia.org/wiki/Object-oriented_programming"
+        },
+        { "name": "PHP", "url": "https://www.php.net" },
+        { "name": "MySQLi", "url": "https://en.wikipedia.org/wiki/MySQLi" }
+      ]
     }
   ]
 }
