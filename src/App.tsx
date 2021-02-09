@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import jsonData from "resources/data.json";
 import { Header } from "components/header";
-import "./App.css";
 import { CardList } from "components/CardList";
+import "./App.css";
 
 interface ContactInfo {
   [linkName: string]: string;
@@ -21,6 +21,7 @@ interface Tag {
 
 export interface Project {
   name: string;
+  label: string;
   tags: Tag[];
   description: string;
   url: string;
@@ -36,9 +37,9 @@ interface StateType {
   data: Data;
 }
 
-class App extends Component<{}, StateType> {
+class App extends React.Component<{}, StateType> {
   displayName = "App";
-  state = {
+  state: StateType = {
     data: {
       details: {
         name: "",

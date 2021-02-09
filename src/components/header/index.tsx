@@ -3,11 +3,7 @@ import { Details } from "App";
 import { Info } from "./Info";
 import { Links } from "./Links";
 
-export const Header: React.FC<Details> = ({
-  name,
-  occupation,
-  contactInfo,
-}: Details) => {
+export const Header = ({ name, occupation, contactInfo }: Details) => {
   return (
     <header>
       <Info name={name} occupation={occupation} />

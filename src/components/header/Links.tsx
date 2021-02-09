@@ -7,11 +7,7 @@ interface PropTypes {
   linkedin: string;
 }
 
-export const Links: React.FC<PropTypes> = ({
-  email,
-  github,
-  linkedin,
-}: PropTypes) => (
+export const Links = ({ email, github, linkedin }: PropTypes) => (
   <div className="links">
     <Link href={`mailto:${email}`} icon="fa-envelope" />
     <Link href={github} target="_blank" icon="fa-github" />

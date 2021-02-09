@@ -5,8 +5,6 @@
 
 header {
   background-color: #202020bd;
-  width: 80%;
-  margin: 70px auto 20px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -45,18 +43,18 @@ a:active {
 }
 
 .card-list {
-  width: 80%;
-  padding: 20px;
-  margin: 20px auto 70px;
-  background-color: #202020bd;
+  width: 90%;
+  margin: 25px auto 40px;
 }
 
 .card {
-  width: 100%;
-  padding: 30px;
-  background-color: grey;
+  padding: 20px;
+  margin-bottom: 25px;
+  background-color: snow;
+  color: #2a2a2a;
 }
 
-.card:not(:first-of-type) {
-  margin-top: 20px;
+.card img {
+  width: 250px;
+  height: 250px;
 }

@@ -6,7 +6,7 @@ interface PropTypes {
   projects: Project[];
 }
 
-export const CardList: React.FC<PropTypes> = ({ projects }: PropTypes) => {
+export const CardList = ({ projects }: PropTypes) => {
   return (
     <div className="card-list">
       {projects.map((project) => (
