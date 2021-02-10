@@ -4,8 +4,8 @@ import { Header } from "components/header";
 import { CardList } from "components/CardList";
 import "./App.css";
 
-interface ContactInfo {
-  [linkName: string]: string;
+export interface ContactInfo {
+  [name: string]: string;
 }
 
 export interface Details {
@@ -14,18 +14,16 @@ export interface Details {
   contactInfo: ContactInfo;
 }
 
-interface Tag {
-  name: string;
-  url: string;
+interface Links {
+  [name: string]: string | undefined;
 }
 
 export interface Project {
   name: string;
   label: string;
-  tags: Tag[];
   description: string;
-  url: string;
-  demo?: string;
+  links: Links;
+  tags: Links;
 }
 
 interface Data {
@@ -33,13 +31,13 @@ interface Data {
   projects: Project[];
 }
 
-interface StateType {
+type State = {
   data: Data;
-}
+};
 
-class App extends React.Component<{}, StateType> {
+class App extends React.Component<{}, State> {
   displayName = "App";
-  state: StateType = {
+  state: State = {
     data: {
       details: {
         name: "",
@@ -51,7 +49,8 @@ class App extends React.Component<{}, StateType> {
   };
 
   componentDidMount() {
-    this.setState({ data: { ...jsonData } });
+    console.log(jsonData);
+    this.setState({ data: jsonData });
   }
 
   render() {

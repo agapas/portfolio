@@ -1,16 +1,29 @@
 import React from "react";
+import { ContactInfo } from "App";
 import { Link } from "./Link";
+import { Email } from "./Email";
 
 interface PropTypes {
-  email: string;
-  github: string;
-  linkedin: string;
+  contactInfo: ContactInfo;
 }
 
-export const Links = ({ email, github, linkedin }: PropTypes) => (
-  <div className="links">
-    <Link href={`mailto:${email}`} icon="fa-envelope" />
-    <Link href={github} target="_blank" icon="fa-github" />
-    <Link href={linkedin} target="_blank" icon="fa-linkedin-square" />
-  </div>
-);
+const getComponent = (key: string, val: string) => {
+  return key === "email" ? (
+    <Email key={key} email={val} />
+  ) : (
+    <Link
+      key={key}
+      href={val}
+      target="_blank"
+      icon={key === "github" ? "fa-github" : "fa-linkedin-square"}
+    />
+  );
+};
+
+export const Links = ({ contactInfo }: PropTypes) => {
+  return (
+    <div className="links">
+      {Object.entries(contactInfo).map(([key, val]) => getComponent(key, val))}
+    </div>
+  );
+};
