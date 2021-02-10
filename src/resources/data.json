@@ -69,8 +69,8 @@
       }
     },
     {
-      "name": "Mini Dice Game",
-      "label": "mini-dice-game",
+      "name": "mini-dice-game",
+      "label": "Mini Dice Game",
       "description": "A simple dice game written in OOP PHP and MySQLi. It was made as a school project.",
       "links": {
         "url": "https://github.com/agapas/mini-dice-game"
