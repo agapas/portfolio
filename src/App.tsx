@@ -2,7 +2,7 @@ import React from "react";
 import jsonData from "resources/data.json";
 import { Header } from "components/header";
 import { CardList } from "components/CardList";
-import "./App.css";
+import "App.css";
 
 export interface ContactInfo {
   [name: string]: string;
@@ -49,7 +49,6 @@ class App extends React.Component<{}, State> {
   };
 
   componentDidMount() {
-    console.log(jsonData);
     this.setState({ data: jsonData });
   }
 

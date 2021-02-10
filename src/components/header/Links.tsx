@@ -1,7 +1,7 @@
 import React from "react";
 import { ContactInfo } from "App";
-import { Link } from "./Link";
 import { Email } from "./Email";
+import { Link } from "./Link";
 
 interface PropTypes {
   contactInfo: ContactInfo;
@@ -14,7 +14,6 @@ const getComponent = (key: string, val: string) => {
     <Link
       key={key}
       href={val}
-      target="_blank"
       icon={key === "github" ? "fa-github" : "fa-linkedin-square"}
     />
   );

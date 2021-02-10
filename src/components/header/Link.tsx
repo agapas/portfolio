@@ -1,17 +1,12 @@
 import React from "react";
 
 interface PropTypes {
-  icon: string;
   href: string;
-  target?: string;
+  icon: string;
 }
 
-export const Link = ({ icon, href, target }: PropTypes) => (
-  <a
-    href={href}
-    target={target}
-    rel={target === "_blank" ? "noopener noreferrer" : undefined}
-  >
+export const Link = ({ href, icon }: PropTypes) => (
+  <a href={href} target="_blank" rel="noopener noreferrer">
     <i className={`fa fa-fw ${icon} fa-lg`} />
   </a>
 );
