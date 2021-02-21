@@ -4,14 +4,14 @@ import { Header } from "components/header";
 import { CardList } from "components/CardList";
 import "App.css";
 
-export interface ContactInfo {
+export interface Dictionary {
   [name: string]: string;
 }
 
 export interface Details {
   name: string;
   occupation: string;
-  contactInfo: ContactInfo;
+  contactInfo: Dictionary;
 }
 
 interface Links {

@@ -2,10 +2,11 @@ import React from "react";
 
 interface PropTypes {
   email: string;
+  icon: string;
 }
 
-export const Email = ({ email }: PropTypes) => (
+export const Email = ({ email, icon }: PropTypes) => (
   <a href={`mailto:${email}`}>
-    <i className="fa fa-fw fa-envelope fa-lg" />
+    <i className={`fa fa-fw ${icon} fa-lg`} />
   </a>
 );
