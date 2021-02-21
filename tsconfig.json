@@ -30,7 +30,8 @@
     "pretty": true,
     "alwaysStrict": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "noUnusedParameters": true,
+    "types": ["node", "webpack-env"],
   },
   "include": ["src", "specs"],
   "exclude": ["node_modules", "build"]
