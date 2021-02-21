@@ -8,10 +8,10 @@ header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  padding: 20px 30px;
 }
 
 .info {
-  padding: 15px 30px 20px;
   text-align: left;
 }
 
@@ -25,7 +25,6 @@ header {
 }
 
 .links {
-  padding: 10px 20px;
   display: flex;
   align-self: center;
   font-size: large;
@@ -52,9 +51,19 @@ a:active {
   margin-bottom: 25px;
   background-color: snow;
   color: #2a2a2a;
+  display: flex;
+  justify-content: center;
 }
 
 .card img {
   width: 250px;
   height: 250px;
+}
+
+.card.with-image {
+  justify-content: space-between;
+}
+
+.card.with-image .project-info {
+  margin-left: 20px;
 }

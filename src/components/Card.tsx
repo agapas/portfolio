@@ -9,10 +9,15 @@ interface PropTypes {
 export const Card = ({ project, imageSrc }: PropTypes) => {
   const { label, description } = project;
   return (
-    <div className="card">
+    <div className={`card ${imageSrc ? "with-image" : ""}`}>
       {imageSrc && <img src={imageSrc} alt={label} />}
-      <h2>{label}</h2>
-      <p>{description}</p>
+      <div className="project-info">
+        <h2 className="project-title">{label}</h2>
+        <p>{description}</p>
+        {/* link to demo */}
+        {/* link to project on github */}
+        {/* list of tags */}
+      </div>
     </div>
   );
 };
