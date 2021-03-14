@@ -10,42 +10,48 @@ body,
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  text-align: center;
   color: white;
 }
 
 header {
   background-color: #202020bd;
   display: flex;
+  flex-flow: column wrap;
   align-items: baseline;
-  justify-content: space-between;
   flex-shrink: 0;
-  padding: 20px 30px;
+  width: 100%;
+  padding: 10px 20px;
 }
 
 .info {
-  text-align: left;
+  align-self: center;
+  margin-bottom: 2px;
 }
 
 .name {
-  font-size: 32px;
+  align-self: center;
+  font-size: x-large;
   font-weight: 200;
 }
 
 .occupation {
+  font-size: x-small;
   font-weight: 200;
 }
 
 .links {
   display: flex;
   align-self: center;
-  font-size: large;
 }
 
 a {
   padding: 5px;
   text-decoration: none;
   color: white;
+}
+
+a:first-of-type {
+  padding-left: 0;
 }
 
 a:hover,
@@ -100,4 +106,36 @@ a:active {
 .card-list::-webkit-scrollbar-thumb {
   border-radius: 1px;
   background-color: #ccc;
+}
+
+@media all and (min-width: 600px) {
+  header {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 20px 30px;
+  }
+
+  .name {
+    font-size: xx-large;
+  }
+
+  .info {
+    margin-bottom: 0;
+  }
+
+  .occupation {
+    font-size: medium;
+  }
+
+  .links {
+    font-size: large;
+  }
+
+  a {
+    padding: 3px;
+  }
+
+  .links a:last-of-type {
+    padding-right: 0;
+  }
 }
