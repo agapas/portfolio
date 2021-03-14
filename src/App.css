@@ -1,26 +1,17 @@
-html,
-body,
-#root,
 .App {
-  width: 100%;
-  height: 100%;
-}
-
-.App {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
   color: white;
 }
 
 header {
-  background-color: #202020bd;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-flow: column wrap;
   align-items: baseline;
-  flex-shrink: 0;
   width: 100%;
   padding: 10px 20px;
+  background-color: #333;
 }
 
 .info {
@@ -61,9 +52,7 @@ a:active {
 
 .card-list {
   width: 90%;
-  margin: 25px auto 40px;
-  flex-grow: 1;
-  overflow: auto;
+  margin: 130px auto 40px;
 }
 
 .card {
@@ -88,26 +77,6 @@ a:active {
   margin-left: 20px;
 }
 
-/* scrollbar custom styles (not supported in Firefox) */
-.card-list::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-  background-color: #f5f5f5;
-}
-
-.card-list::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  background-color: #f5f5f5;
-  border-radius: 1px;
-}
-
-.card-list::-webkit-scrollbar-corner,
-.card-list::-webkit-scrollbar-thumb {
-  border-radius: 1px;
-  background-color: #ccc;
-}
-
 @media all and (min-width: 600px) {
   header {
     flex-flow: row nowrap;
@@ -129,10 +98,6 @@ a:active {
 
   .links {
     font-size: large;
-  }
-
-  a {
-    padding: 3px;
   }
 
   .links a:last-of-type {
