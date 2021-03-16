@@ -14,23 +14,24 @@ header {
   background-color: #333;
 }
 
-.info {
+header .info {
   align-self: center;
   margin-bottom: 2px;
 }
 
 .name {
-  align-self: center;
+  text-align: center;
   font-size: x-large;
   font-weight: 200;
 }
 
 .occupation {
-  font-size: x-small;
+  text-align: center;
+  font-size: 12px;
   font-weight: 200;
 }
 
-.links {
+header .links {
   display: flex;
   align-self: center;
 }
@@ -45,8 +46,8 @@ a:first-of-type {
   padding-left: 0;
 }
 
-a:hover,
-a:active {
+header a:hover,
+header a:active {
   color: royalblue;
 }
 
@@ -61,20 +62,52 @@ a:active {
   background-color: snow;
   color: #2a2a2a;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .label {
+  font-size: large;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card .content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .card img {
-  width: 250px;
-  height: 250px;
+  /* width: 100%; */
+  width: 60%;
+  align-self: center;
+  margin-bottom: 10px;
 }
 
-.card.with-image {
-  justify-content: space-between;
+.card .info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.card.with-image .project-info {
-  margin-left: 20px;
+.card .description {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.card .links {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card .links .link-button {
+  border-radius: 4px;
+  color: white;
+  background-color: royalblue;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 4px 8px;
 }
 
 @media all and (min-width: 600px) {
@@ -86,21 +119,52 @@ a:active {
 
   .name {
     font-size: xx-large;
+    text-align: left;
   }
 
-  .info {
+  header .info {
     margin-bottom: 0;
   }
 
   .occupation {
     font-size: medium;
+    text-align: left;
   }
 
-  .links {
+  header .links {
     font-size: large;
   }
 
   .links a:last-of-type {
     padding-right: 0;
+  }
+
+  .card {
+    padding-bottom: 30px;
+  }
+
+  .card .label {
+    font-size: x-large;
+    margin-bottom: 15px;
+  }
+
+  .card .content {
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .card.with-image img {
+    max-width: 30%;
+    margin-bottom: 0;
+  }
+
+  .card.with-image .info {
+    margin-left: 20px;
+    max-width: 60%;
+    justify-content: center;
+  }
+
+  .card .description {
+    font-size: medium;
   }
 }
