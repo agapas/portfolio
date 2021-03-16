@@ -8,7 +8,7 @@ interface PropTypes {
 }
 
 export const Card = ({ project, imageSrc }: PropTypes) => {
-  const { label, description, links } = project;
+  const { label, description, links, tags } = project;
   const demoUrl = links["demo"];
   const codeUrl = links["url"];
 
@@ -20,10 +20,18 @@ export const Card = ({ project, imageSrc }: PropTypes) => {
         <div className="info">
           <div className="description">{description}</div>
           <div className="links">
-            {demoUrl ? <LinkButton label="Demo" href={demoUrl} /> : null}
-            {codeUrl ? (
-              <LinkButton label="Code on Github" href={codeUrl} />
+            {demoUrl ? (
+              <LinkButton key="demo" label="Demo" href={demoUrl} />
             ) : null}
+            {codeUrl ? (
+              <LinkButton key="repo" label="Code on Github" href={codeUrl} />
+            ) : null}
+          </div>
+          <div className="tags">
+            {Object.entries(tags).map(([key, val]) => {
+              console.log({ key, val });
+              return <LinkButton key={key} label={key} href={val || ""} />;
+            })}
           </div>
         </div>
       </div>

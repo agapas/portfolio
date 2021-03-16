@@ -96,18 +96,30 @@ header a:active {
   font-size: 14px;
 }
 
-.card .links {
+.card .links, .card .tags {
   display: flex;
   flex-flow: row wrap;
 }
 
-.card .links .link-button {
+.card .links .link-button, .card .tags .link-button {
   border-radius: 4px;
-  color: white;
-  background-color: royalblue;
   font-size: 15px;
   line-height: 18px;
-  padding: 4px 8px;
+}
+
+.card .links .link-button {
+  padding: 3px 8px 4px;
+  border: solid 1px #4164ce;
+  background-color: royalblue;
+  color: white;
+}
+
+.card .tags .link-button {
+  padding: 1px 6px 3px;
+  background-color: whitesmoke;
+  border: solid 1px #e7e7e7;
+  font-size: small;
+  color: #666;
 }
 
 @media all and (min-width: 600px) {
@@ -166,5 +178,12 @@ header a:active {
 
   .card .description {
     font-size: medium;
+    margin-bottom: 15px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .card.with-image .info {
+    margin-left: 30px;
   }
 }
