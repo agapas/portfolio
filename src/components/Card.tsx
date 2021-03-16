@@ -28,10 +28,9 @@ export const Card = ({ project, imageSrc }: PropTypes) => {
             ) : null}
           </div>
           <div className="tags">
-            {Object.entries(tags).map(([key, val]) => {
-              console.log({ key, val });
-              return <LinkButton key={key} label={key} href={val || ""} />;
-            })}
+            {Object.entries(tags).map(([key, val]) => (
+              <LinkButton key={key} label={key} href={val || ""} />
+            ))}
           </div>
         </div>
       </div>
