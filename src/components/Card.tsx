@@ -24,7 +24,7 @@ export const Card = ({ project, imageSrc }: PropTypes) => {
               <LinkButton key="demo" label="Demo" href={demoUrl} />
             ) : null}
             {codeUrl ? (
-              <LinkButton key="repo" label="Code on Github" href={codeUrl} />
+              <LinkButton key="repo" label="Github repository" href={codeUrl} />
             ) : null}
           </div>
           <div className="tags">

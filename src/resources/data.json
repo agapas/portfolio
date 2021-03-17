@@ -30,8 +30,7 @@
       "label": "Personal Portfolio",
       "description": "The project for this website. It's written with React and TypeScript in functional programming like approach.",
       "links": {
-        "url": "https://github.com/agapas/portfolio",
-        "demo": "http://agapas.github.io/portfolio"
+        "url": "https://github.com/agapas/portfolio"
       },
       "tags": {
         "React": "https://reactjs.org",
