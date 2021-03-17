@@ -12,7 +12,7 @@
     {
       "name": "react-currency-converter",
       "label": "React Currency Converter",
-      "description": "A single page application written with React, in functional programming like approach, which uses the exchanged rates API.",
+      "description": "A single page application written with React in functional programming like approach. It uses the exchanged rates API.",
       "links": {
         "url": "https://github.com/agapas/react-currency-converter",
         "demo": "http://agapas.github.io/react-currency-converter"
@@ -28,7 +28,7 @@
     {
       "name": "portfolio",
       "label": "Personal Portfolio",
-      "description": "This website project. A single page responsive website written with React and TypeScript.",
+      "description": "The project for this website. It's written with React and TypeScript in functional programming like approach.",
       "links": {
         "url": "https://github.com/agapas/portfolio",
         "demo": "http://agapas.github.io/portfolio"
@@ -37,28 +37,38 @@
         "React": "https://reactjs.org",
         "TypeScript": "https://www.typescriptlang.org",
         "JavaScript": "https://www.javascript.com",
-        "Functional Programming": "https://en.wikipedia.org/wiki/Functional_programming",
-        "Jest": "https://jestjs.io"
+        "Functional Programming": "https://en.wikipedia.org/wiki/Functional_programming"
       }
     },
     {
-      "name": "good-morning-translator",
-      "label": "Good Morning Translator",
-      "description": "jQuery Mobile application which translates phrase: 'Good Morning' into 26 languages. It was made as a school project.",
+      "name": "halloween-gallery",
+      "label": "Halloween gallery",
+      "description": "Fully responsive single page website with gallery example. It's made with plain JavaScript in functional programming like approach.",
       "links": {
-        "url": "https://github.com/agapas/good-morning-translator",
-        "demo": "https://agapas.github.io/good-morning-translator"
+        "url": "https://github.com/agapas/halloween-gallery",
+        "demo": "https://agapas.github.io/halloween-gallery/"
       },
       "tags": {
-        "JQuery": "https://jquery.com",
-        "HTML": "https://en.wikipedia.org/wiki/HTML",
-        "CSS": "https://en.wikipedia.org/wiki/Cascading_Style_Sheets"
+        "JavaScript": "https://www.javascript.com",
+        "Functional Programming": "https://en.wikipedia.org/wiki/Functional_programming"
+      }
+    },
+    {
+      "name": "3d-print-toolbox-modified",
+      "label": "Modified 3D Print Toolbox",
+      "description": "Blender 3d addon with utilities for 3d printing. It's based on existed built-in addon, the '3D Print Toolbox'. This expanded version has more fexibility and influence on the mesh clean up settings.",
+      "links": {
+        "url": "https://github.com/agapas/3d-print-toolbox-modified"
+      },
+      "tags": {
+        "Python": "https://www.python.org",
+        "Blender 3d": "https://www.blender.org"
       }
     },
     {
       "name": "login-register-system",
       "label": "Login and Register System",
-      "description": "Login and Register System, written in OOP PHP and MySQLi. It was made as a school project.",
+      "description": "Login and Register System written in OOP PHP and MySQLi. It was made as a school project.",
       "links": {
         "url": "https://github.com/agapas/login-register-system"
       },

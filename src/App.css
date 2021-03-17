@@ -79,9 +79,7 @@ header a:active {
 }
 
 .card img {
-  /* TODO: decide if the full width looks better */
-  /* width: 100%; */
-  width: 60%;
+  width: 100%;
   align-self: center;
   margin-bottom: 10px;
 }
@@ -171,9 +169,12 @@ header a:active {
     margin-bottom: 0;
   }
 
+  .card .info {
+    max-width: 60%;
+  }
+
   .card.with-image .info {
     margin-left: 20px;
-    max-width: 60%;
   }
 
   .card .description {
