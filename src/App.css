@@ -37,13 +37,9 @@ header .links {
 }
 
 a {
-  padding: 5px;
+  padding: 5px 10px 0 0;
   text-decoration: none;
   color: white;
-}
-
-a:first-of-type {
-  padding-left: 0;
 }
 
 header a:hover,
@@ -95,12 +91,18 @@ header a:active {
   font-size: 14px;
 }
 
-.card .links, .card .tags {
+.card .tags {
+  padding-top: 3px;
+}
+
+.card .links,
+.card .tags {
   display: flex;
   flex-flow: row wrap;
 }
 
-.card .links .link-button, .card .tags .link-button {
+.card .links .link-button,
+.card .tags .link-button {
   border-radius: 4px;
   font-size: 15px;
   line-height: 18px;
@@ -151,6 +153,7 @@ header a:active {
   }
 
   .card {
+    padding-top: 25px;
     padding-bottom: 30px;
   }
 
@@ -184,8 +187,13 @@ header a:active {
 }
 
 @media all and (min-width: 1200px) {
+  .card.with-image img {
+    max-width: 40%;
+  }
+
   .card.with-image .info {
     margin-left: 30px;
+    max-width: 50%;
   }
 
   .card.with-image .description {

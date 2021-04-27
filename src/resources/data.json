@@ -21,6 +21,7 @@
         "React": "https://reactjs.org",
         "JavaScript": "https://www.javascript.com",
         "Functional Programming": "https://en.wikipedia.org/wiki/Functional_programming",
+        "API": "https://exchangeratesapi.io",
         "Enzyme": "https://airbnb.io/enzyme",
         "Jest": "https://jestjs.io"
       }
@@ -28,7 +29,7 @@
     {
       "name": "portfolio",
       "label": "Personal Portfolio",
-      "description": "The project for this website. It's written with React and TypeScript in functional programming like approach.",
+      "description": "The project for this website. It's written with React and TypeScript in functional programming like approach. For the styles the mobile-first approach is used.",
       "links": {
         "url": "https://github.com/agapas/portfolio"
       },
@@ -42,7 +43,7 @@
     {
       "name": "halloween-gallery",
       "label": "Halloween gallery",
-      "description": "Fully responsive single page website with gallery example. It's made with plain JavaScript in functional programming like approach.",
+      "description": "Fully responsive single page website with gallery example. It's made with plain JavaScript in functional programming like approach. The styles with the mobile-first approach.",
       "links": {
         "url": "https://github.com/agapas/halloween-gallery",
         "demo": "https://agapas.github.io/halloween-gallery/"
