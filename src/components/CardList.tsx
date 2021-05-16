@@ -27,6 +27,10 @@ interface PropTypes {
   projects: Project[];
 }
 
+// TODO:
+// - change this component into class
+// - move importImages call into componentDidMount method
+
 export const CardList = ({ projects }: PropTypes) => {
   const allImages = importImages();
   return (
