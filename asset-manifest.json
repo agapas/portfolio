@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3b9e7bc7.chunk.css",
-    "main.js": "/portfolio/static/js/main.41cd6e64.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.41cd6e64.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.1e0b31cc.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.1e0b31cc.js.map",
+    "main.css": "/portfolio/static/css/main.6e6b082c.chunk.css",
+    "main.js": "/portfolio/static/js/main.73d9ad40.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.73d9ad40.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.75e6d76a.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.75e6d76a.js.map",
     "static/js/2.189704d3.chunk.js": "/portfolio/static/js/2.189704d3.chunk.js",
     "static/js/2.189704d3.chunk.js.map": "/portfolio/static/js/2.189704d3.chunk.js.map",
-    "static/js/3.2c9ff245.chunk.js": "/portfolio/static/js/3.2c9ff245.chunk.js",
-    "static/js/3.2c9ff245.chunk.js.map": "/portfolio/static/js/3.2c9ff245.chunk.js.map",
+    "static/js/3.c7661bb5.chunk.js": "/portfolio/static/js/3.c7661bb5.chunk.js",
+    "static/js/3.c7661bb5.chunk.js.map": "/portfolio/static/js/3.c7661bb5.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.3b9e7bc7.chunk.css.map": "/portfolio/static/css/main.3b9e7bc7.chunk.css.map",
+    "static/css/main.6e6b082c.chunk.css.map": "/portfolio/static/css/main.6e6b082c.chunk.css.map",
     "static/js/2.189704d3.chunk.js.LICENSE.txt": "/portfolio/static/js/2.189704d3.chunk.js.LICENSE.txt",
     "static/media/3d-print-toolbox-modified.png": "/portfolio/static/media/3d-print-toolbox-modified.c4c1e567.png",
+    "static/media/e-commerce-project.png": "/portfolio/static/media/e-commerce-project.09690f57.png",
     "static/media/halloween-gallery.png": "/portfolio/static/media/halloween-gallery.490ba291.png",
     "static/media/login-register-system.png": "/portfolio/static/media/login-register-system.d1142fe2.png",
     "static/media/mini-dice-game.png": "/portfolio/static/media/mini-dice-game.fdc0f7cf.png",
     "static/media/react-currency-converter.jpg": "/portfolio/static/media/react-currency-converter.4bc73781.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1e0b31cc.js",
+    "static/js/runtime-main.75e6d76a.js",
     "static/js/2.189704d3.chunk.js",
-    "static/css/main.3b9e7bc7.chunk.css",
-    "static/js/main.41cd6e64.chunk.js"
+    "static/css/main.6e6b082c.chunk.css",
+    "static/js/main.73d9ad40.chunk.js"
   ]
 }
