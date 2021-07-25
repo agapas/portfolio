@@ -78,6 +78,7 @@ header a:active {
   width: 100%;
   align-self: center;
   margin-bottom: 10px;
+  border: 1px solid grey;
 }
 
 .card .info {
