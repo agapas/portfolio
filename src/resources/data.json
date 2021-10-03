@@ -12,13 +12,14 @@
     {
       "name": "e-commerce-project",
       "label": "E-commerce website - WIP",
-      "description": "Current project I'm working on. It's a multi page e-commerce application written with React (routing with React Router), using Firebase (to enhance my full stack knowledge). So far it contains fully responsive pages: landing page, shop and register & login with an option of google sign in (user authentication is made with the Firebase and user data is stored in the Firestore). Plans to add: payment using the Stripe API.",
+      "description": "Current project I'm working on. It's a multi page e-commerce application written with React (routing with React Router), using Firebase (to enhance my full stack knowledge). So far it contains fully responsive pages: landing page, shop page, checkout page and the register & login page with an option of google sign in (user authentication is made with the Firebase and user data is stored in the Firestore). Plans to add: contact page and also the payment using the Stripe API.",
       "links": {
         "url": "https://github.com/agapas/e-commerce-project",
         "demo": "http://agapas.github.io/e-commerce-project"
       },
       "tags": {
         "React": "https://reactjs.org",
+        "Redux": "https://react-redux.js.org",
         "JavaScript": "https://www.javascript.com",
         "Functional Programming": "https://en.wikipedia.org/wiki/Functional_programming",
         "Firebase": "https://firebase.google.com"
