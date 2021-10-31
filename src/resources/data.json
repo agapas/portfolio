@@ -45,7 +45,7 @@
     {
       "name": "portfolio",
       "label": "Personal Portfolio",
-      "description": "The project for this website. It's written with React and TypeScript in functional programming like approach. For the styles the mobile-first approach is used.",
+      "description": "The project for this website. It's written with React and TypeScript in functional programming like approach. The mobile-first approach is used for the styles.",
       "links": {
         "url": "https://github.com/agapas/portfolio"
       },
@@ -59,7 +59,7 @@
     {
       "name": "halloween-gallery",
       "label": "Halloween gallery",
-      "description": "Fully responsive single page website with gallery example. It's made with plain JavaScript in functional programming like approach. The styles with the mobile-first approach.",
+      "description": "Fully responsive single page website with gallery example. It's made with plain JavaScript in functional programming like approach, and the styles with the mobile-first approach.",
       "links": {
         "url": "https://github.com/agapas/halloween-gallery",
         "demo": "https://agapas.github.io/halloween-gallery/"
@@ -72,7 +72,7 @@
     {
       "name": "3d-print-toolbox-modified",
       "label": "Modified 3D Print Toolbox",
-      "description": "Blender 3d addon with utilities for 3d printing. It's based on existed built-in addon, the '3D Print Toolbox'. This expanded version has more fexibility and influence on the mesh clean up settings.",
+      "description": "Blender 3d addon with utilities for 3d printing. It's based on existing built-in addon, the '3D Print Toolbox'. This expanded version has more flexibility and influence on the mesh cleanup settings.",
       "links": {
         "url": "https://github.com/agapas/3d-print-toolbox-modified"
       },
