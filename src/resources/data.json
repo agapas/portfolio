@@ -12,7 +12,7 @@
     {
       "name": "e-commerce-project",
       "label": "E-commerce website - WIP",
-      "description": "Current project I'm working on. It's a multi page e-commerce application written with React (routing with React Router), using Firebase (to enhance my full stack knowledge). So far it contains fully responsive pages: landing page, shop page, checkout page and the register & login page with an option of google sign in (user authentication is made with the Firebase and user data is stored in the Firestore). Plans to add: contact page and also the payment using the Stripe API.",
+      "description": "Current project I'm working on. It's a multi page e-commerce application written with React (routing with React Router), using the Firebase (to enhance my full stack knowledge). So far it contains fully responsive pages: landing page, shop page, checkout page and the register & login page with an option of google sign in (user authentication is made with the Firebase and user data is stored in the Firestore). Plans to add: contact page content and also the payment using the Stripe API.",
       "links": {
         "url": "https://github.com/agapas/e-commerce-project",
         "demo": "http://agapas.github.io/e-commerce-project"
@@ -28,7 +28,7 @@
     {
       "name": "react-currency-converter",
       "label": "React Currency Converter",
-      "description": "A single page application written with React in functional programming like approach. It uses the exchanged rates API.",
+      "description": "A single page application written with the React in functional programming like approach. It uses the exchanged rates API.",
       "links": {
         "url": "https://github.com/agapas/react-currency-converter",
         "demo": "http://agapas.github.io/react-currency-converter"
@@ -43,9 +43,26 @@
       }
     },
     {
+      "name": "hacker-news-search-app",
+      "label": "Hacker News Search",
+      "description": "A single page application (SPA) to search articles made with the React (React Hooks) that uses the hacker news API. Styles written with tailwind css framework.",
+      "links": {
+        "url": "https://github.com/agapas/hacker-news-search-app",
+        "demo": "http://agapas.github.io/hacker-news-search-app"
+      },
+      "tags": {
+        "React": "https://reactjs.org",
+        "React Hooks": "https://reactjs.org/docs/hooks-intro.html",
+        "JavaScript": "https://www.javascript.com",
+        "Functional Programming": "https://en.wikipedia.org/wiki/Functional_programming",
+        "API": "https://hn.algolia.com/api",
+        "Tailwindcss": "https://tailwindcss.com"
+      }
+    },
+    {
       "name": "portfolio",
       "label": "Personal Portfolio",
-      "description": "The project for this website. It's written with React and TypeScript in functional programming like approach. The mobile-first approach is used for the styles.",
+      "description": "The project for this website. It's written with the React and the TypeScript in functional programming like approach. The mobile-first approach is used for the styles.",
       "links": {
         "url": "https://github.com/agapas/portfolio"
       },
