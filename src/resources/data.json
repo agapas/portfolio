@@ -45,7 +45,7 @@
     {
       "name": "hacker-news-search-app",
       "label": "Hacker News Search",
-      "description": "A single page application (SPA) to search articles made with the React (React Hooks) that uses the hacker news API. Styles written with tailwind css framework.",
+      "description": "A single page application (SPA) to search articles made with the React that uses the hacker news API. Styles written with tailwind css framework.",
       "links": {
         "url": "https://github.com/agapas/hacker-news-search-app",
         "demo": "http://agapas.github.io/hacker-news-search-app"
