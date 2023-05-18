@@ -1,5 +1,3 @@
-import React from "react";
-
 interface PropTypes {
   name: string;
   occupation: string;
@@ -8,6 +6,6 @@ interface PropTypes {
 export const Info = ({ name, occupation }: PropTypes) => (
   <div className="info">
     <div className="name">{name}</div>
-    <div className="occupation">{occupation.toUpperCase()}</div>
+    <div className="occupation">{occupation?.toUpperCase()}</div>
   </div>
 );

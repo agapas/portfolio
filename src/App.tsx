@@ -1,8 +1,8 @@
-import React from "react";
-import jsonData from "resources/data.json";
-import { Header } from "components/header";
+import { useState, useEffect } from "react";
 import { CardList } from "components/CardList";
-import "App.css";
+import { Header } from "components/header";
+import "./App.css";
+import jsonData from "./assets/data.json";
 
 export interface Dictionary {
   [name: string]: string;
@@ -31,36 +31,30 @@ interface Data {
   projects: Project[];
 }
 
-type State = {
-  data: Data;
+const defaultData: Data = {
+  details: {
+    name: "",
+    occupation: "",
+    contactInfo: {},
+  },
+  projects: [],
 };
 
-class App extends React.Component<{}, State> {
-  displayName = "App";
-  state: State = {
-    data: {
-      details: {
-        name: "",
-        occupation: "",
-        contactInfo: {},
-      },
-      projects: [],
-    },
-  };
+function App() {
+  const [data, setData] = useState(defaultData);
 
-  componentDidMount() {
-    this.setState({ data: jsonData });
-  }
+  useEffect(() => {
+    setData(jsonData);
+  }, []);
 
-  render() {
-    const { details, projects } = this.state.data;
-    return (
-      <div className="App">
-        <Header {...details} />
-        <CardList projects={projects} />
-      </div>
-    );
-  }
+  const { details, projects } = data;
+
+  return (
+    <div className="app">
+      <Header {...details} />
+      <CardList projects={projects} />
+    </div>
+  );
 }
 
 export default App;

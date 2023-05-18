@@ -1,5 +1,17 @@
-.App {
+#root {
   color: white;
+}
+
+.error {
+  margin: 20px auto;
+  padding: 10px 15px;
+  width: 50%;
+  background-color: snow;
+  border: 1px solid red;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: red;
 }
 
 header {

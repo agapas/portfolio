@@ -1,38 +1,32 @@
 {
   "compilerOptions": {
     "baseUrl": "./src",
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "es5",
-      "ScriptHost",
-      "es2015.promise",
-      "es2015.collection",
-      "esnext"
-    ],
-    "allowJs": true,
+    "paths": {"@/*": ["src/*"]},
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
     "skipLibCheck": true,
-    "esModuleInterop": true,
+    
+    /* Bundler mode */
+    "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react",
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "pretty": true,
-    "alwaysStrict": true,
+    "jsx": "react-jsx",
+    
+    /* Linting */
+    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "types": ["node", "webpack-env"],
+    "noFallthroughCasesInSwitch": true,
+    
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "types": ["vite/client"],
   },
-  "include": ["src", "specs"],
-  "exclude": ["node_modules", "build"]
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }],
 }

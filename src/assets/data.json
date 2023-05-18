@@ -110,19 +110,6 @@
         "PHP": "https://www.php.net",
         "MySQLi": "https://en.wikipedia.org/wiki/MySQLi"
       }
-    },
-    {
-      "name": "mini-dice-game",
-      "label": "Mini Dice Game",
-      "description": "A simple dice game written in OOP PHP and MySQLi. It was made as a school project.",
-      "links": {
-        "url": "https://github.com/agapas/mini-dice-game"
-      },
-      "tags": {
-        "OOP": "https://en.wikipedia.org/wiki/Object-oriented_programming",
-        "PHP": "https://www.php.net",
-        "MySQLi": "https://en.wikipedia.org/wiki/MySQLi"
-      }
     }
   ]
 }

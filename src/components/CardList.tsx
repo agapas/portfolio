@@ -1,42 +1,41 @@
-import React from "react";
-import { Project } from "App";
+import { Dictionary, Project } from "App";
 import { Card } from "./Card";
 
-const importImages = () => {
-  /*
-    IMPORTANT:
-      1. In the case of the error "Property context does not exist on type NodeRequire":
-          - install webpack-env package: npm i -D @types/webpack-env
-          - add: "types": ["node", "webpack-env"] to compilerOptions in tsconfig.json
-          - restart editor
-      2. don't pass variables into require.context(), only literals are supported by webpack
-  */
-  const r = require.context("../resources/images", false, /\.(png|jpe?g|svg)$/);
-
-  let images: any = {};
+const getImagePaths = (): Dictionary => {
   const regex = /\.(png|jpe?g|svg)$/;
+  const allImages = import.meta.glob(
+    ["../assets/images/*.jpg", "../assets/images/*.png"],
+    { eager: true } // to get rid of promise
+  );
 
-  r.keys().forEach((item: string) => {
-    images[item.replace("./", "").replace(regex, "")] = r(item);
-  });
+  return Object.keys(allImages).reduce((acc, fullPath) => {
+    const withoutFileExt = fullPath.replace("./", "").replace(regex, "");
+    const imageName = withoutFileExt.substring(
+      withoutFileExt.lastIndexOf("/") + 1
+    );
 
-  return images;
+    if (!imageName.length) return acc;
+
+    const url = new URL(fullPath, import.meta.url);
+    const pathName = url.pathname;
+    const data = {
+      [imageName]: pathName,
+    };
+    return { ...acc, ...data };
+  }, {});
 };
 
 interface PropTypes {
   projects: Project[];
 }
 
-// TODO:
-// - change this component into class
-// - move importImages call into componentDidMount method
+export const CardList = ({ projects = [] }: PropTypes) => {
+  const imagePaths = getImagePaths();
 
-export const CardList = ({ projects }: PropTypes) => {
-  const allImages = importImages();
   return (
     <div className="card-list">
       {projects.map((project) => {
-        const imageSrc = allImages[project.name]?.default;
+        const imageSrc = imagePaths[project.name];
         return (
           <Card key={project.name} project={project} imageSrc={imageSrc} />
         );

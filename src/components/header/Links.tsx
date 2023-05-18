@@ -1,4 +1,3 @@
-import React from "react";
 import { Dictionary } from "App";
 import { Email } from "./Email";
 import { Link } from "./Link";
