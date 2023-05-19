@@ -19,7 +19,9 @@ Build for production. By default, the build output will be placed at `dist` fold
 
 ### `npm run preview`
 
-Locally preview production build at `http://localhost:8080`.
+Locally preview production build at [http://localhost:8080](http://localhost:8080).
+
+**A NOTE:** the preview command should be run after the build command, otherwise there will be nothing to preview.
 
 ## Learn More
 

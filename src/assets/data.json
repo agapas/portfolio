@@ -12,6 +12,7 @@
     {
       "name": "e-commerce-project",
       "label": "E-commerce website - WIP",
+      "imageType": "png",
       "description": "Current project I'm working on. It's a multi page e-commerce application written with React (routing with React Router), using the Firebase (to enhance my full stack knowledge). So far it contains fully responsive pages: landing page, shop page, checkout page and the register & login page with an option of google sign in (user authentication is made with the Firebase and user data is stored in the Firestore). Plans to add: contact page content and also the payment using the Stripe API.",
       "links": {
         "url": "https://github.com/agapas/e-commerce-project",
@@ -28,6 +29,7 @@
     {
       "name": "react-currency-converter",
       "label": "React Currency Converter",
+      "imageType": "png",
       "description": "A single page application written with the React in functional programming like approach. It uses the exchanged rates API.",
       "links": {
         "url": "https://github.com/agapas/react-currency-converter",
@@ -45,6 +47,7 @@
     {
       "name": "hacker-news-search-app",
       "label": "Hacker News Search",
+      "imageType": "jpg",
       "description": "A single page application (SPA) to search articles made with the React that uses the hacker news API. Styles written with tailwind css framework.",
       "links": {
         "url": "https://github.com/agapas/hacker-news-search-app",
@@ -76,6 +79,7 @@
     {
       "name": "halloween-gallery",
       "label": "Halloween gallery",
+      "imageType": "png",
       "description": "Fully responsive single page website with gallery example. It's made with plain JavaScript in functional programming like approach, and the styles with the mobile-first approach.",
       "links": {
         "url": "https://github.com/agapas/halloween-gallery",
@@ -89,6 +93,7 @@
     {
       "name": "3d-print-toolbox-modified",
       "label": "Modified 3D Print Toolbox",
+      "imageType": "png",
       "description": "Blender 3d addon with utilities for 3d printing. It's based on existing built-in addon, the '3D Print Toolbox'. This expanded version has more flexibility and influence on the mesh cleanup settings.",
       "links": {
         "url": "https://github.com/agapas/3d-print-toolbox-modified"
@@ -101,6 +106,7 @@
     {
       "name": "login-register-system",
       "label": "Login and Register System",
+      "imageType": "png",
       "description": "Login and Register System written in OOP PHP and MySQLi. It was made as a school project.",
       "links": {
         "url": "https://github.com/agapas/login-register-system"

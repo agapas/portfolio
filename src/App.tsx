@@ -24,6 +24,7 @@ export interface Project {
   description: string;
   links: Links;
   tags: Links;
+  imageType?: string;
 }
 
 interface Data {

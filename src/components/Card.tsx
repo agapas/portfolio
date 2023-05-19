@@ -3,19 +3,18 @@ import { LinkButton } from "./LinkButton";
 
 interface PropTypes {
   project: Project;
-  imageSrc?: string;
 }
 
-export const Card = ({ project, imageSrc }: PropTypes) => {
-  const { label, description, links, tags } = project;
+export const Card = ({ project }: PropTypes) => {
+  const { imageType, name, label, description, links, tags } = project;
   const demoUrl = links["demo"];
   const codeUrl = links["url"];
 
   return (
-    <div className={`card ${imageSrc ? "with-image" : ""}`}>
+    <div className={`card ${imageType ? "with-image" : ""}`}>
       <div className="label">{label}</div>
       <div className="content">
-        {imageSrc && <img src={imageSrc} alt={label} />}
+        {imageType && <img src={`/images/${name}.${imageType}`} alt={label} />}
         <div className="info">
           <div className="description">{description}</div>
           <div className="links">
