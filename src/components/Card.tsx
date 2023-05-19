@@ -7,14 +7,19 @@ interface PropTypes {
 
 export const Card = ({ project }: PropTypes) => {
   const { imageType, name, label, description, links, tags } = project;
+
   const demoUrl = links["demo"];
   const codeUrl = links["url"];
+
+  const baseUrl = import.meta.env.DEV ? "" : "/portfolio";
 
   return (
     <div className={`card ${imageType ? "with-image" : ""}`}>
       <div className="label">{label}</div>
       <div className="content">
-        {imageType && <img src={`/images/${name}.${imageType}`} alt={label} />}
+        {imageType && (
+          <img src={`${baseUrl}/images/${name}.${imageType}`} alt={label} />
+        )}
         <div className="info">
           <div className="description">{description}</div>
           <div className="links">
