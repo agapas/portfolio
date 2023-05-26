@@ -1,6 +1,6 @@
 import { Dictionary } from "App";
 import { Email } from "./Email";
-import { Link } from "./Link";
+import { Link } from "../common/Link";
 
 interface PropTypes {
   contactInfo: Dictionary;

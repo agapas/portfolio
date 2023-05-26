@@ -1,0 +1,10 @@
+.label {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+@media all and (min-width: 768px) {
+  .label {
+    font-size: x-large;
+  }
+}

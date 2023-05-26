@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { CardList } from "components/CardList";
 import { Header } from "components/header";
+import MainContent from "components/main-content";
 import "./App.css";
 import jsonData from "./assets/data.json";
 
@@ -14,17 +14,16 @@ export interface Details {
   contactInfo: Dictionary;
 }
 
-interface Links {
+export interface Links {
   [name: string]: string | undefined;
 }
 
 export interface Project {
-  name: string;
   label: string;
   description: string;
   links: Links;
   tags: Links;
-  imageType?: string;
+  imageName?: string;
 }
 
 interface Data {
@@ -53,7 +52,7 @@ function App() {
   return (
     <div className="app">
       <Header {...details} />
-      <CardList projects={projects} />
+      <MainContent projects={projects} />
     </div>
   );
 }

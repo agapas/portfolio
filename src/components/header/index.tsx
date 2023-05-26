@@ -1,6 +1,7 @@
 import { Details } from "App";
 import { Info } from "./Info";
 import { Links } from "./Links";
+import "./index.css";
 
 export const Header = ({ name, occupation, contactInfo }: Details) => {
   return (

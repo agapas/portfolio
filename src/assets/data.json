@@ -10,13 +10,12 @@
   },
   "projects": [
     {
-      "name": "e-commerce-project",
       "label": "E-commerce website - WIP",
-      "imageType": "png",
+      "imageName": "e-commerce-project.jpg",
       "description": "Current project I'm working on. It's a multi page e-commerce application written with React (routing with React Router), using the Firebase (to enhance my full stack knowledge). So far it contains fully responsive pages: landing page, shop page, checkout page and the register & login page with an option of google sign in (user authentication is made with the Firebase and user data is stored in the Firestore). Plans to add: contact page content and also the payment using the Stripe API.",
       "links": {
-        "url": "https://github.com/agapas/e-commerce-project",
-        "demo": "http://agapas.github.io/e-commerce-project"
+        "Demo": "http://agapas.github.io/e-commerce-project",
+        "Github repository": "https://github.com/agapas/e-commerce-project"
       },
       "tags": {
         "React": "https://reactjs.org",
@@ -27,13 +26,12 @@
       }
     },
     {
-      "name": "react-currency-converter",
       "label": "React Currency Converter",
-      "imageType": "png",
+      "imageName": "react-currency-converter.jpg",
       "description": "A single page application written with the React in functional programming like approach. It uses the exchanged rates API.",
       "links": {
-        "url": "https://github.com/agapas/react-currency-converter",
-        "demo": "http://agapas.github.io/react-currency-converter"
+        "Demo": "http://agapas.github.io/react-currency-converter",
+        "Github repository": "https://github.com/agapas/react-currency-converter"
       },
       "tags": {
         "React": "https://reactjs.org",
@@ -45,13 +43,12 @@
       }
     },
     {
-      "name": "hacker-news-search-app",
       "label": "Hacker News Search",
-      "imageType": "jpg",
+      "imageName": "hacker-news-search-app.jpg",
       "description": "A single page application (SPA) to search articles made with the React that uses the hacker news API. Styles written with tailwind css framework.",
       "links": {
-        "url": "https://github.com/agapas/hacker-news-search-app",
-        "demo": "http://agapas.github.io/hacker-news-search-app"
+        "Demo": "http://agapas.github.io/hacker-news-search-app",
+        "Github repository": "https://github.com/agapas/hacker-news-search-app"
       },
       "tags": {
         "React": "https://reactjs.org",
@@ -63,11 +60,10 @@
       }
     },
     {
-      "name": "portfolio",
       "label": "Personal Portfolio",
       "description": "The project for this website. It's written with the React and the TypeScript in functional programming like approach. The mobile-first approach is used for the styles.",
       "links": {
-        "url": "https://github.com/agapas/portfolio"
+        "Github repository": "https://github.com/agapas/portfolio"
       },
       "tags": {
         "React": "https://reactjs.org",
@@ -77,13 +73,12 @@
       }
     },
     {
-      "name": "halloween-gallery",
       "label": "Halloween gallery",
-      "imageType": "png",
+      "imageName": "halloween-gallery.jpg",
       "description": "Fully responsive single page website with gallery example. It's made with plain JavaScript in functional programming like approach, and the styles with the mobile-first approach.",
       "links": {
-        "url": "https://github.com/agapas/halloween-gallery",
-        "demo": "https://agapas.github.io/halloween-gallery/"
+        "Demo": "https://agapas.github.io/halloween-gallery/",
+        "Github repository": "https://github.com/agapas/halloween-gallery"
       },
       "tags": {
         "JavaScript": "https://www.javascript.com",
@@ -91,12 +86,11 @@
       }
     },
     {
-      "name": "3d-print-toolbox-modified",
       "label": "Modified 3D Print Toolbox",
-      "imageType": "png",
+      "imageName": "3d-print-toolbox-modified.jpg",
       "description": "Blender 3d addon with utilities for 3d printing. It's based on existing built-in addon, the '3D Print Toolbox'. This expanded version has more flexibility and influence on the mesh cleanup settings.",
       "links": {
-        "url": "https://github.com/agapas/3d-print-toolbox-modified"
+        "Github repository": "https://github.com/agapas/3d-print-toolbox-modified"
       },
       "tags": {
         "Python": "https://www.python.org",
@@ -104,12 +98,11 @@
       }
     },
     {
-      "name": "login-register-system",
       "label": "Login and Register System",
-      "imageType": "png",
+      "imageName": "login-register-system.jpg",
       "description": "Login and Register System written in OOP PHP and MySQLi. It was made as a school project.",
       "links": {
-        "url": "https://github.com/agapas/login-register-system"
+        "Github repository": "https://github.com/agapas/login-register-system"
       },
       "tags": {
         "OOP": "https://en.wikipedia.org/wiki/Object-oriented_programming",

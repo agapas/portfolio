@@ -1,0 +1,10 @@
+.main-content {
+  width: 90%;
+  margin: 120px auto 40px;
+}
+
+@media all and (min-width: 600px) {
+  .main-content {
+    margin-top: 130px;
+  }
+}
