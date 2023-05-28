@@ -1,15 +1,16 @@
 import { Links } from "App";
-import { Link } from "../../common/Link";
+import { Link } from "components/common/Link";
+import styles from "./LinkButtons.module.css";
 
 interface PropTypes {
   data: Links;
-  className?: string;
+  dataType?: string;
 }
 
 export const LinkButtons = (props: PropTypes) => {
-  const { className = "links", data } = props;
+  const { data, dataType = "links" } = props;
   return (
-    <div className={className}>
+    <div className={styles[`${dataType}`]}>
       {Object.entries(data).map(([key, val]) => (
         <Link key={key} label={key} href={val || ""} />
       ))}

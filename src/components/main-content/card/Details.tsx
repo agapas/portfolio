@@ -1,18 +1,21 @@
 import { Links } from "App";
 import { LinkButtons } from "./LinkButtons";
+import styles from "./Details.module.css";
 
 interface PropTypes {
   description: string;
+  withImage: boolean;
   links?: Links;
   tags?: Links;
 }
 
-export const Details = ({ description, links, tags }: PropTypes) => {
+export const Details = ({ description, withImage, links, tags }: PropTypes) => {
+  const withImageClass = withImage ? styles["with-image"] : "";
   return (
-    <div className="details">
-      <div className="description">{description}</div>
+    <div className={`${styles.details} ${withImageClass}`}>
+      <div className={styles.description}>{description}</div>
       {links && <LinkButtons data={links} />}
-      {tags && <LinkButtons className="tags" data={tags} />}
+      {tags && <LinkButtons data={tags} dataType="tags" />}
     </div>
   );
 };

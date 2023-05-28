@@ -1,6 +1,7 @@
 import { Dictionary } from "App";
+import { Link } from "components/common/Link";
 import { Email } from "./Email";
-import { Link } from "../common/Link";
+import styles from "./Links.module.css";
 
 interface PropTypes {
   contactInfo: Dictionary;
@@ -24,7 +25,7 @@ const getComponent = (key: string, val: string) => {
 
 export const Links = ({ contactInfo }: PropTypes) => {
   return (
-    <div className="links">
+    <div className={styles.links}>
       {Object.entries(contactInfo).map(([key, val]) => getComponent(key, val))}
     </div>
   );

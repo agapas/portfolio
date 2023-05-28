@@ -1,0 +1,10 @@
+.links {
+  display: flex;
+  align-self: center;
+  font-size: large;
+}
+
+a:hover,
+a:active {
+  color: royalblue;
+}

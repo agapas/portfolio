@@ -1,3 +1,5 @@
+import styles from "./Image.module.css";
+
 const getImageUrl = (imageUrl: string) => {
   return new URL(imageUrl, import.meta.url).href;
 };
@@ -8,5 +10,12 @@ interface PropTypes {
 }
 
 export const Image = ({ url, alt }: PropTypes) => {
-  return <img src={getImageUrl(url)} alt={alt} width="100%" />;
+  return (
+    <img
+      src={getImageUrl(url)}
+      alt={alt}
+      width="100%"
+      className={styles.image}
+    />
+  );
 };

@@ -8,8 +8,6 @@ a {
   padding: 5px 10px 0 0;
 }
 
-@media all and (min-width: 600px) {
-  a:last-of-type {
-    padding-right: 0;
-  }
+a:last-of-type {
+  padding-right: 0;
 }

@@ -1,0 +1,20 @@
+.image {
+  align-self: flex-start;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  max-width: 600px;
+}
+
+@media all and (min-width: 768px) {
+  .image {
+    max-width: 42%;
+    margin-bottom: 0;
+    align-self: flex-start;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .image {
+    max-width: 40%;
+  }
+}

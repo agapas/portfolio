@@ -1,0 +1,34 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  padding: 8px 0;
+}
+
+.description {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+@media all and (min-width: 600px) {
+  .details {
+    padding: 0;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .with-image {
+    margin-left: 20px;
+    flex-grow: 2;
+  }
+
+  .description {
+    font-size: medium;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .with-image {
+    margin-left: 30px;
+  }
+}

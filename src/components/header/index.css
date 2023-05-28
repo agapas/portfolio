@@ -10,52 +10,10 @@ header {
   background-color: #333;
 }
 
-header .info {
-  align-self: center;
-  margin-bottom: 10px;
-}
-
-header .name {
-  text-align: center;
-  font-size: x-large;
-  font-weight: 400;
-}
-
-header .occupation {
-  text-align: center;
-  font-size: 12px;
-  font-weight: 200;
-}
-
-header .links {
-  display: flex;
-  align-self: center;
-  font-size: large;
-}
-
-header a:hover,
-header a:active {
-  color: royalblue;
-}
-
 @media all and (min-width: 600px) {
   header {
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: 20px 30px;
-  }
-
-  header .name {
-    font-size: xx-large;
-    text-align: left;
-  }
-
-  header .info {
-    margin-bottom: 0;
-  }
-
-  header .occupation {
-    font-size: medium;
-    text-align: left;
   }
 }

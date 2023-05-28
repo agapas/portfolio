@@ -1,0 +1,41 @@
+.links {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tags {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 3px;
+}
+
+.links a > div,
+.tags a > div {
+  border-radius: 4px;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.links a > div {
+  padding: 4px 8px 5px;
+  border: solid 1px #4164ce;
+  background-color: royalblue;
+  color: white;
+}
+
+.links a > div:hover {
+  background-color: #3f51b5;
+}
+
+.tags a > div {
+  padding: 1px 6px 3px;
+  background-color: whitesmoke;
+  border: solid 1px #e7e7e7;
+  font-size: small;
+  color: #666;
+}
+
+.tags a > div:hover {
+  background-color: #e7e7e7;
+  border-color: #c6c6c6;
+}

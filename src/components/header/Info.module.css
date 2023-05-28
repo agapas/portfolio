@@ -1,0 +1,32 @@
+.info {
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.name {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 400;
+}
+
+.occupation {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+@media all and (min-width: 600px) {
+  .name {
+    font-size: xx-large;
+    text-align: left;
+  }
+
+  .info {
+    margin-bottom: 0;
+  }
+
+  .occupation {
+    font-size: medium;
+    text-align: left;
+  }
+}

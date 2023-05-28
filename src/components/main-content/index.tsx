@@ -1,6 +1,6 @@
 import { Project } from "App";
 import { Card } from "./card";
-import "./index.css";
+import styles from "./index.module.css";
 
 interface PropTypes {
   projects: Project[];
@@ -8,7 +8,7 @@ interface PropTypes {
 
 const MainContent = ({ projects = [] }: PropTypes) => {
   return (
-    <div className={"main-content"}>
+    <div className={styles["main-content"]}>
       {projects.map((project) => (
         <Card key={project.label} project={project} />
       ))}

@@ -1,8 +1,8 @@
 import { Project } from "App";
-import { Image } from "./Image";
 import { Label } from "components/common/Label";
 import { Details } from "./Details";
-import "./index.css";
+import { Image } from "./Image";
+import styles from "./index.module.css";
 
 interface PropTypes {
   project: Project;
@@ -15,13 +15,18 @@ export const Card = ({ project }: PropTypes) => {
   const imageUrl = `${baseUrl}/images/${imageName}`;
 
   return (
-    <div className={`card ${imageName ? "with-image" : ""}`}>
+    <div className={styles.card}>
       <Label text={label} />
-      <div className="content">
+      <div className={styles.content}>
         {imageName && (
           <Image url={imageUrl} alt={`${label} project interface`} />
         )}
-        <Details description={description} links={links} tags={tags} />
+        <Details
+          description={description}
+          withImage={!!imageName}
+          links={links}
+          tags={tags}
+        />
       </div>
     </div>
   );
