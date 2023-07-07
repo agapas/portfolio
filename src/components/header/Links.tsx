@@ -1,4 +1,4 @@
-import { Dictionary } from "App";
+import { Dictionary } from "types";
 import { Link } from "components/common/Link";
 import { Email } from "./Email";
 import styles from "./Links.module.css";

@@ -1,4 +1,4 @@
-import { Project } from "App";
+import { Project } from "types";
 import { Card } from "./card";
 import styles from "./index.module.css";
 

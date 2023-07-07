@@ -1,4 +1,4 @@
-import { Links } from "App";
+import { Links } from "types";
 import { LinkButtons } from "./LinkButtons";
 import styles from "./Details.module.css";
 

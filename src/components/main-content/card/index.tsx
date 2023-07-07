@@ -1,4 +1,4 @@
-import { Project } from "App";
+import { Project } from "types";
 import { Label } from "components/common/Label";
 import { Details } from "./Details";
 import { Image } from "./Image";

@@ -1,4 +1,4 @@
-import { Details } from "App";
+import { Details } from "types";
 import { Info } from "./Info";
 import { Links } from "./Links";
 import "./index.css";
