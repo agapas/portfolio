@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
 import { Header } from "components/header";
 import MainContent from "components/main-content";
 import "./App.css";
-import jsonData from "./assets/data.json";
+import jsonData from "assets/data.json";
 
 export interface Dictionary {
   [name: string]: string;
@@ -26,28 +25,8 @@ export interface Project {
   imageName?: string;
 }
 
-interface Data {
-  details: Details;
-  projects: Project[];
-}
-
-const defaultData: Data = {
-  details: {
-    name: "",
-    occupation: "",
-    contactInfo: {},
-  },
-  projects: [],
-};
-
 function App() {
-  const [data, setData] = useState(defaultData);
-
-  useEffect(() => {
-    setData(jsonData);
-  }, []);
-
-  const { details, projects } = data;
+  const { details, projects } = jsonData;
 
   return (
     <div className="app">
