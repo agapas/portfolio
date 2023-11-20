@@ -12,7 +12,7 @@
     {
       "label": "E-commerce website - WIP",
       "imageName": "e-commerce-project.jpg",
-      "description": "Current project I'm working on. It's a multi page e-commerce application written with React (routing with React Router), using the Firebase (to enhance my full stack knowledge). So far it contains fully responsive pages: landing page, shop page, checkout page and the register & login page with an option of google sign in (user authentication is made with the Firebase and user data is stored in the Firestore). Plans to add: contact page content and also the payment using the Stripe API.",
+      "description": "Current project I'm working on. It's a multi page e-commerce application written with React, using the Firebase (to enhance my full stack knowledge). So far it contains fully responsive pages: landing page, shop page, checkout page and the register & login page with an option of google sign in (user authentication made with the Firebase and user data stored in the Firestore). Plans to add: contact page content and also the payment using the Stripe API.",
       "links": {
         "Demo": "http://agapas.github.io/e-commerce-project",
         "Github repository": "https://github.com/agapas/e-commerce-project"
@@ -43,25 +43,26 @@
       }
     },
     {
-      "label": "Hacker News Search",
-      "imageName": "hacker-news-search-app.jpg",
-      "description": "A single page application (SPA) to search articles made with the React that uses the hacker news API. Styles written with tailwind css framework.",
+      "label": "Image Generator",
+      "imageName": "image-gen-app.jpg",
+      "description": "A simple image generator that creates images based on provided text description using OpenAI API (DALL-E model). The app is written in React and Typescript, and the styles with Sass in a mobile-first approach.",
       "links": {
-        "Demo": "http://agapas.github.io/hacker-news-search-app",
-        "Github repository": "https://github.com/agapas/hacker-news-search-app"
+        "Demo": "https://image-gen-app-mu.vercel.app",
+        "Github repository": "https://github.com/agapas/image-gen-app"
       },
       "tags": {
-        "React": "https://reactjs.org",
-        "React Hooks": "https://reactjs.org/docs/hooks-intro.html",
+        "React": "https://react.dev",
+        "Next": "https://nextjs.org",
+        "TypeScript": "https://www.typescriptlang.org",
         "JavaScript": "https://www.javascript.com",
+        "Open AI API": "https://platform.openai.com/docs/api-reference/images/create",
         "Functional Programming": "https://en.wikipedia.org/wiki/Functional_programming",
-        "API": "https://hn.algolia.com/api",
-        "Tailwindcss": "https://tailwindcss.com"
+        "Sass": "https://sass-lang.com/"
       }
     },
     {
       "label": "Personal Portfolio",
-      "description": "The project for this website. It's written with the React and the TypeScript in functional programming like approach. The mobile-first approach is used for the styles.",
+      "description": "The project for this website. It's written with the React and the TypeScript in functional programming like approach. A mobile-first approach is used for the styles.",
       "links": {
         "Github repository": "https://github.com/agapas/portfolio"
       },
@@ -75,7 +76,7 @@
     {
       "label": "Halloween gallery",
       "imageName": "halloween-gallery.jpg",
-      "description": "Fully responsive single page website with gallery example. It's made with plain JavaScript in functional programming like approach, and the styles with the mobile-first approach.",
+      "description": "Fully responsive single page website with gallery example. It's made with plain JavaScript in functional programming like approach, and the styles with a mobile-first approach.",
       "links": {
         "Demo": "https://agapas.github.io/halloween-gallery/",
         "Github repository": "https://github.com/agapas/halloween-gallery"
