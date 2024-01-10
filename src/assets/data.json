@@ -12,34 +12,36 @@
     {
       "label": "E-commerce website - WIP",
       "imageName": "e-commerce-project.jpg",
-      "description": "Current project I'm working on. It's a multi page e-commerce application written with React, using the Firebase (to enhance my full stack knowledge). So far it contains fully responsive pages: landing page, shop page, checkout page and the register & login page with an option of google sign in (user authentication made with the Firebase and user data stored in the Firestore). Plans to add: contact page content and also the payment using the Stripe API.",
+      "description": "Current project I'm working on. It's a multi page e-commerce application built with React, Redux (with Reselect for memoization) and Firebase (authentication and Firestore database). So far it contains fully responsive pages: landing page, shop, checkout and the register & login page with an option of google sign in. Plans to add: contact page content and the payment using the Stripe API. Current work: migration to NextJs.",
       "links": {
         "Demo": "http://agapas.github.io/e-commerce-project",
         "Github repository": "https://github.com/agapas/e-commerce-project"
       },
       "tags": {
-        "React": "https://reactjs.org",
+        "React": "https://react.dev",
         "Redux": "https://react-redux.js.org",
-        "JavaScript": "https://www.javascript.com",
+        "JavaScript": "https://en.wikipedia.org/wiki/JavaScript",
         "Functional Programming": "https://en.wikipedia.org/wiki/Functional_programming",
         "Firebase": "https://firebase.google.com"
       }
     },
     {
-      "label": "React Currency Converter",
-      "imageName": "react-currency-converter.jpg",
-      "description": "A single page application written with the React in functional programming like approach. It uses the exchanged rates API.",
+      "label": "Micro-frontends with Module Federation",
+      "imageName": "micro-frontends.png",
+      "description": "An example of application with a micro-frontends architecture that applies concepts of the Webpack 5 Module Federation. In this application, modules are integrated at runtime via Module Federation Plugin. They contain different tech stacks (React and Vue) and can be developed and deployed individually. However, the project contains an example of deployment workflows (github actions) and is configured to use AWS S3 service for deployment and CloudFront as a CDN (for better performance).",
       "links": {
-        "Demo": "http://agapas.github.io/react-currency-converter",
-        "Github repository": "https://github.com/agapas/react-currency-converter"
+        "Github repository": "https://github.com/agapas/micro-frontends-react-vue"
       },
       "tags": {
-        "React": "https://reactjs.org",
-        "JavaScript": "https://www.javascript.com",
-        "Functional Programming": "https://en.wikipedia.org/wiki/Functional_programming",
-        "API": "https://exchangeratesapi.io",
-        "Enzyme": "https://airbnb.io/enzyme",
-        "Jest": "https://jestjs.io"
+        "Webpack 5": "https://webpack.js.org",
+        "Module Federation": "https://webpack.js.org/concepts/module-federation",
+        "Module Federation Plugin": "https://webpack.js.org/plugins/module-federation-plugin",
+        "React": "https://react.dev",
+        "Vue": "https://vuejs.org",
+        "CI/CD": "https://en.wikipedia.org/wiki/CI/CD",
+        "Github Actions": "https://github.com/features/actions",
+        "Material UI": "https://mui.com/material-ui",
+        "Sass": "https://sass-lang.com"
       }
     },
     {
@@ -54,36 +56,57 @@
         "React": "https://react.dev",
         "Next": "https://nextjs.org",
         "TypeScript": "https://www.typescriptlang.org",
-        "JavaScript": "https://www.javascript.com",
+        "JavaScript": "https://en.wikipedia.org/wiki/JavaScript",
         "Open AI API": "https://platform.openai.com/docs/api-reference/images/create",
         "Functional Programming": "https://en.wikipedia.org/wiki/Functional_programming",
-        "Sass": "https://sass-lang.com/"
+        "Sass": "https://sass-lang.com"
+      }
+    },
+    {
+      "label": "React Currency Converter",
+      "imageName": "react-currency-converter.jpg",
+      "description": "A single page application written with the React in functional programming like approach. It uses the exchanged rates API.",
+      "links": {
+        "Demo": "http://agapas.github.io/react-currency-converter",
+        "Github repository": "https://github.com/agapas/react-currency-converter"
+      },
+      "tags": {
+        "React": "https://reactjs.org",
+        "JavaScript": "https://en.wikipedia.org/wiki/JavaScript",
+        "Functional Programming": "https://en.wikipedia.org/wiki/Functional_programming",
+        "API": "https://exchangeratesapi.io",
+        "Enzyme": "https://airbnb.io/enzyme",
+        "Jest": "https://jestjs.io"
       }
     },
     {
       "label": "Personal Portfolio",
-      "description": "The project for this website. It's written with the React and the TypeScript in functional programming like approach. A mobile-first approach is used for the styles.",
+      "description": "The project for this website with some examples of my personal/hobby work (more projects can be found on my github account), made with React and TypeScript in functional programming like approach. A mobile-first approach is used for the styles.",
       "links": {
         "Github repository": "https://github.com/agapas/portfolio"
       },
       "tags": {
-        "React": "https://reactjs.org",
+        "React": "https://react.dev",
+        "Vite": "https://vitejs.dev",
         "TypeScript": "https://www.typescriptlang.org",
-        "JavaScript": "https://www.javascript.com",
-        "Functional Programming": "https://en.wikipedia.org/wiki/Functional_programming"
+        "JavaScript": "https://en.wikipedia.org/wiki/JavaScript",
+        "Functional Programming": "https://en.wikipedia.org/wiki/Functional_programming",
+        "CSS": "https://developer.mozilla.org/en-US/docs/Web/CSS"
       }
     },
     {
       "label": "Halloween gallery",
       "imageName": "halloween-gallery.jpg",
-      "description": "Fully responsive single page website with gallery example. It's made with plain JavaScript in functional programming like approach, and the styles with a mobile-first approach.",
+      "description": "Fully responsive single page website with a gallery example. It's made with a pure JavaScript in functional programming like approach, and the styles with a mobile-first approach.",
       "links": {
         "Demo": "https://agapas.github.io/halloween-gallery/",
         "Github repository": "https://github.com/agapas/halloween-gallery"
       },
       "tags": {
-        "JavaScript": "https://www.javascript.com",
-        "Functional Programming": "https://en.wikipedia.org/wiki/Functional_programming"
+        "Vanilla JS": "http://vanilla-js.com",
+        "Functional Programming": "https://en.wikipedia.org/wiki/Functional_programming",
+        "CSS": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "HTML": "https://developer.mozilla.org/en-US/docs/Web/HTML"
       }
     },
     {
@@ -96,19 +119,6 @@
       "tags": {
         "Python": "https://www.python.org",
         "Blender 3d": "https://www.blender.org"
-      }
-    },
-    {
-      "label": "Login and Register System",
-      "imageName": "login-register-system.jpg",
-      "description": "Login and Register System written in OOP PHP and MySQLi. It was made as a school project.",
-      "links": {
-        "Github repository": "https://github.com/agapas/login-register-system"
-      },
-      "tags": {
-        "OOP": "https://en.wikipedia.org/wiki/Object-oriented_programming",
-        "PHP": "https://www.php.net",
-        "MySQLi": "https://en.wikipedia.org/wiki/MySQLi"
       }
     }
   ]
